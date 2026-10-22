@@ -11,6 +11,10 @@ ARI is a single-user personal assistant built around one idea: the durable part 
 - **Coding agents that can't claim "done" without passing checks.** Completion is judged against defined acceptance checks, not the agent's own report.
 - **Runtime-portable.** The same assistant has run on several different model engines.
 
+![Wearable display: the assistant describing what the camera sees](media/wearable-assistant.jpg)
+
+*Seen through the wearable display: the assistant looks through the camera and comments on the scene (an earlier robot build is on the monitor).*
+
 ## Results
 
 As of 2026-10-21:
