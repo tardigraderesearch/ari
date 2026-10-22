@@ -18,7 +18,7 @@ As of 2026-10-21:
 | Area | Result |
 |---|---|
 | Coding agents | 610 jobs run. Of 255 with a recorded verdict: 65% pass, 18% pass with scope violation, 17% fail |
-| Memory | 330 proposals: 259 applied, 13 rejected, 17 ambiguous blocked rather than guessed |
+| Memory | 330 proposals: 259 applied, 13 rejected, 41 pending, 17 ambiguous blocked rather than guessed |
 | Knowledge base | 563 notes |
 | Activity | ~2,000 agent sessions and 9.5k tool calls over 90 days |
 | Uptime | Gateway up 9.5 days with 0 restarts |
