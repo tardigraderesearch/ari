@@ -2,18 +2,22 @@
 
 **A personal AI whose memory is mine: the models are interpreters, the vault is the assistant.**
 
+![ARI's knowledge graph: every note and link in the vault that ARI runs on](media/ari-vault-graph.jpg)
+
+*This is ARI: the vault of notes and links the assistant thinks with. Models plug into it; extensions like a wearable display and a robot plug into it too.*
+
 ARI is a single-user personal assistant built around one idea: the durable part of an AI assistant should be owned by the person, not by whichever model happens to be running today. Models come and go; the memory, the rules and the track record stay.
 
 ## What it does
 
-- **Multi-surface assistant.** Chat, voice, a wearable display, and a desk deck, all talking to the same assistant.
+- **One assistant, many extensions.** Chat and voice day to day; extensions such as a wearable display, a desk deck and a hexapod robot all connect to the same assistant and memory.
 - **Memory with provenance and human approval.** Nothing becomes a lasting fact without a recorded source and a human sign-off. Ambiguous items are blocked, not guessed.
 - **Coding agents that can't claim "done" without passing checks.** Completion is judged against defined acceptance checks, not the agent's own report.
 - **Runtime-portable.** The same assistant has run on several different model engines.
 
 ![Wearable display: the assistant describing what the camera sees](media/wearable-assistant.jpg)
 
-*Seen through the wearable display: the assistant looks through the camera and comments on the scene (an earlier robot build is on the monitor).*
+*Extension: the wearable display. The assistant looks through the camera and comments on the scene (an earlier robot build is on the monitor).*
 
 ## Results
 
