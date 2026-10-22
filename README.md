@@ -13,7 +13,7 @@ ARI is a single-user personal assistant built around one idea: the durable part 
 - **One assistant, many extensions.** Chat and voice day to day; extensions such as a wearable display, a desk deck and a [hexapod robot](https://github.com/evilhobo1911/hexapod-rl) all connect to the same assistant and memory.
 - **Memory with provenance and human approval.** Memories captured automatically from conversations carry a recorded source and need a human sign-off before they are filed. Ambiguous items are blocked, not guessed.
 - **Coding agents measured against acceptance checks.** Each job is judged against defined checks, not the agent's own report, and the recorded verdict separates a pass, a pass with a scope violation, and a failure.
-- **Runtime-portable.** The same assistant and memory have run under Hermes Agent, Claude Code and a Gemini-based runtime.
+- **Model-agnostic.** ARI lives in the Obsidian vault, not in any one model. Each runtime connects to the vault directly: Hermes Agent, Claude Code and a Gemini-based runtime have all run as ARI, independently of each other.
 
 ![Wearable display: the assistant describing what the camera sees](media/wearable-assistant.jpg)
 
