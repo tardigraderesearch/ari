@@ -10,7 +10,7 @@ ARI is a single-user personal assistant built around one idea: the durable part 
 
 ## What it does
 
-- **One assistant, many extensions.** Chat and voice day to day; extensions such as a wearable display, a desk deck and a hexapod robot all connect to the same assistant and memory.
+- **One assistant, many extensions.** Chat and voice day to day; extensions such as a wearable display, a desk deck and a [hexapod robot](https://github.com/evilhobo1911/hexapod-rl) all connect to the same assistant and memory.
 - **Memory with provenance and human approval.** Nothing becomes a lasting fact without a recorded source and a human sign-off. Ambiguous items are blocked, not guessed.
 - **Coding agents that can't claim "done" without passing checks.** Completion is judged against defined acceptance checks, not the agent's own report.
 - **Runtime-portable.** The same assistant has run on several different model engines.
