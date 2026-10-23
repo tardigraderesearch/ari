@@ -56,8 +56,3 @@ ARI is a single-user personal system, not a product. Some components are paused:
 Built on and with: Hermes Agent, Claude Code, Codex, Chatterbox, and Obsidian.
 
 Source is private.
-
-## How this was built
-AI is used here as a tool to speed up implementation. I design the system and
-define what "working" means. When issues are found, they're identified, and
-ARI — my own agent system — fixes them against those checks.
