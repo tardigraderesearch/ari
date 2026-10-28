@@ -1,10 +1,4 @@
-# ARI
-
-**My personal AI assistant, built so that its memory belongs to me and not to any one AI model.**
-
-![ARI's knowledge graph: every note and link in the vault that ARI runs on](media/ari-vault-graph.jpg)
-
-*Each dot is a note ARI keeps and each line is a link between notes. This is ARI's memory: a folder of plain text files that I own.*
+<p align="center"><img src="media/banner.png" width="100%" alt="ARI: my personal AI assistant. Its memory is a vault of plain notes that I own, so any AI model can run it"></p>
 
 **What it is.** Most chatbots forget you when the chat ends, and whatever they do remember is locked inside one company's product. ARI keeps everything it knows (projects, decisions, preferences, procedures) in a folder of ordinary notes, opened in the free note-taking app Obsidian.
 
@@ -65,8 +59,6 @@ The green block in the diagram is open source (MIT) and lives in this repo: **[`
 - **Kept out of the vault:** the index lives in `~/.cache`, one database per vault, so Obsidian sync and git never see a binary file.
 - **Small on purpose:** two dependencies (MCP and YAML), no embeddings, no background daemon, and no network requests of its own.
 
-## Credits
-
-Built on and with Hermes Agent, Claude Code, Codex, Chatterbox and Obsidian.
+## License
 
 The engine in [`runtime/`](runtime/) is open source (MIT). ARI's own vault, approval pipeline and coding-agent harness are private. Everything else in this repo is covered by [LICENSE](LICENSE).
