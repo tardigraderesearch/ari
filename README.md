@@ -19,10 +19,6 @@
 - **Coding agents measured against acceptance checks.** Each job is judged against defined checks, not the agent's own report, and every verdict is recorded as a pass, a pass with a scope violation, or a failure.
 - **Model-agnostic.** Hermes Agent, Claude Code and a Gemini-based runtime have each run as ARI, independently, on the same vault.
 
-![Wearable display: the assistant describing what the camera sees](media/wearable-assistant.jpg)
-
-*Extension: the wearable display. The assistant looks through the camera and comments on the scene.*
-
 ## Results
 
 As of 2026-10-21:
