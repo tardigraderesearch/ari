@@ -1,20 +1,14 @@
-# obsidian-agent-runtime
+# ARI runtime (obsidian-agent-runtime)
 
-[![CI](https://github.com/tardigraderesearch/obsidian-agent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/tardigraderesearch/obsidian-agent-runtime/actions/workflows/ci.yml)
-
-**Part of ARI → [tardigraderesearch/ari](https://github.com/tardigraderesearch/ari).** This is ARI's open engine: the search
-server, hooks, subagents and idle watcher that let [Claude Code](https://docs.claude.com/en/docs/claude-code)
-use a markdown vault (Obsidian, or any folder of `.md` notes) as its long-term memory. What each piece does, the
-architecture diagram and how search works are described in the [ARI README](https://github.com/tardigraderesearch/ari#the-open-engine-obsidian-agent-runtime).
-This repo holds the source, install steps and quickstart.
+The open engine inside [ARI](../README.md): the search server, hooks, subagents and idle watcher that let [Claude Code](https://docs.claude.com/en/docs/claude-code) use a markdown vault (Obsidian, or any folder of `.md` notes) as long-term memory. What each piece does and how search works are in the [ARI README](../README.md#the-open-engine). MIT licensed (see [LICENSE](LICENSE)).
 
 ## Quickstart (about 5 minutes)
 
 Requires Python 3.11+ with SQLite FTS5 support (standard CPython builds include it), and Claude Code installed and signed in for step 2. Commands assume a POSIX shell.
 
 ```bash
-git clone https://github.com/tardigraderesearch/obsidian-agent-runtime
-cd obsidian-agent-runtime
+git clone https://github.com/tardigraderesearch/ari
+cd ari/runtime
 python3 -m venv .venv && . .venv/bin/activate
 pip install .
 
@@ -114,13 +108,13 @@ assumes the vault has a `README.md` describing its layout and a filing rule; see
 ## Idle watcher (optional)
 
 Parks an idle long-running session's transcript into the vault and `/clear`s it
-([how it works](https://github.com/tardigraderesearch/ari#the-open-engine-obsidian-agent-runtime)).
+([how it works](../README.md#the-open-engine)).
 Pass `--on-park "CMD"` or set `OAR_ON_PARK` to run `CMD <transcript-path>` after each park.
 
 Run these from the cloned repository root (the quickstart left you in the demo vault). The watcher needs Linux, tmux and a systemd user manager.
 
 ```bash
-cd /path/to/obsidian-agent-runtime
+cd /path/to/ari/runtime
 mkdir -p ~/.config/systemd/user
 watcher/start-session.sh ~/my-vault assistant          # tmux session "assistant" running claude
 python3 watcher/idle_watcher.py --vault ~/my-vault --tmux-target assistant --dry-run --force
@@ -133,7 +127,7 @@ It is stdlib-only and tracks previously parked content in a local state file to 
 ## Development
 
 ```bash
-cd /path/to/obsidian-agent-runtime
+cd /path/to/ari/runtime
 .venv/bin/python -m pip install -e '.[test]'
 .venv/bin/python -m pytest -q
 ```
@@ -141,8 +135,3 @@ cd /path/to/obsidian-agent-runtime
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
-## How this was built
-AI is used here as a tool to speed up implementation. I design the system and
-define what "working" means. When issues are found, they're identified, and
-ARI — my own agent system — fixes them against those checks.

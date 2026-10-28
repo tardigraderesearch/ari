@@ -1,12 +1,17 @@
-name: CI
+name: Runtime CI
 
 on:
   push:
+    paths: ['runtime/**', '.github/workflows/runtime-ci.yml']
   pull_request:
+    paths: ['runtime/**', '.github/workflows/runtime-ci.yml']
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: runtime
     strategy:
       fail-fast: false
       matrix:

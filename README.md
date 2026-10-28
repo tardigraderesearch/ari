@@ -37,9 +37,9 @@ As of 2026-10-21:
 
 *Source: [media/ari-architecture.drawio](media/ari-architecture.drawio) (opens in [draw.io](https://app.diagrams.net)).*
 
-## The open engine: obsidian-agent-runtime
+## The open engine
 
-The green block in the diagram is open source (MIT): **[obsidian-agent-runtime](https://github.com/tardigraderesearch/obsidian-agent-runtime)**. It turns any folder of markdown notes into persistent, searchable memory for [Claude Code](https://docs.claude.com/en/docs/claude-code). Install steps and a five-minute quickstart with a fictional demo vault live in that repo.
+The green block in the diagram is open source (MIT) and lives in this repo: **[`runtime/`](runtime/)**. It turns any folder of markdown notes into persistent, searchable memory for [Claude Code](https://docs.claude.com/en/docs/claude-code). Install steps and a five-minute quickstart with a fictional demo vault are in [runtime/README.md](runtime/README.md).
 
 ![Terminal recording: indexing the demo vault and searching it](media/vault-search-demo.gif)
 
@@ -69,4 +69,4 @@ The green block in the diagram is open source (MIT): **[obsidian-agent-runtime](
 
 Built on and with Hermes Agent, Claude Code, Codex, Chatterbox and Obsidian.
 
-The engine above is open source. ARI's own vault, approval pipeline and coding-agent harness are private.
+The engine in [`runtime/`](runtime/) is open source (MIT). ARI's own vault, approval pipeline and coding-agent harness are private. Everything else in this repo is covered by [LICENSE](LICENSE).

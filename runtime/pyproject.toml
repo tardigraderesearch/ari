@@ -32,8 +32,8 @@ dependencies = [
 test = ["pytest>=8.0"]
 
 [project.urls]
-Homepage = "https://github.com/tardigraderesearch/obsidian-agent-runtime"
-Issues = "https://github.com/tardigraderesearch/obsidian-agent-runtime/issues"
+Homepage = "https://github.com/tardigraderesearch/ari/tree/main/runtime"
+Issues = "https://github.com/tardigraderesearch/ari/issues"
 
 [project.scripts]
 obsidian-agent-runtime = "obsidian_agent_runtime.cli:main"
